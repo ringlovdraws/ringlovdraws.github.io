@@ -1,3 +1,10 @@
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
 /** Reset some basic elements */
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
@@ -24,8 +31,7 @@ ul, ol { margin-left: 30px; }
 li > ul, li > ol { margin-bottom: 0; }
 
 /** Headings */
-h1, h2, h3, h4, h5, h6 { font-weight: 400; }
-h1, h2, h3, h4, h5, h6 { font: "Montserrat"; }
+h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", serif; font-weight: 800; }
 
 /** Links */
 a { color: #2a7ae2; text-decoration: none; }

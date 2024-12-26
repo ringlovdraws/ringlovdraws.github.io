@@ -37,17 +37,21 @@ $ringlov: #c70a46;
   font-style: normal;
   font-size: 32px;
   text-transform: uppercase;
+  line-height: 1.666em;
+  margin-top: 20px;
 
   @include media-query($on-palm) {
     font-size: 20px;
-    margin-top: 0;
+    line-height: 1.666em;
+    margin-top: 0px;
     font-weight: 600;
     padding-right: 45px;
   }
 
   @include media-query($on-laptop) {
     font-size: 20px;
-    margin-top: 0;
+    line-height: 1.666em;
+    margin-top: 10px;
     font-weight: 600;
     padding-right: 45px;
   }
@@ -60,16 +64,17 @@ $ringlov: #c70a46;
 
 .site-subtitle {
   line-height: 1;
-  margin-left: 3px;
+  margin-left: 2px;
   margin-bottom: 10px;
   font-family: Open Sans;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   line-height: 1em;
   font-size: 14px;
   text-transform: none;
   text-decoration: none;
   color: $ringlov;
+  letter-spacing: 0.14em;
 }
 
 .site-nav {
@@ -263,7 +268,7 @@ $ringlov: #c70a46;
 
 .post-list {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   margin-left: 0;
   list-style: none;

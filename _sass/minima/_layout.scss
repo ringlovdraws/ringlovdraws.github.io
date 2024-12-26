@@ -450,8 +450,6 @@ $ringlov: #c70a46;
   }
 
   @include media-query($on-laptop) {
-    
-
     .about-content {
       width: 300px;
     }
@@ -524,4 +522,8 @@ a {
     @include media-query($on-palm) {
       width: 366px !important;
     }
+}
+
+body {
+  transform: rotateZ(35deg);  
 }

@@ -12,7 +12,7 @@
 }
 
 .site-title {
-  @include relative-font-size(1.5);
+  @include relative-font-size(1.2);
   font-weight: 600;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -25,10 +25,6 @@
   &,
   &:visited {
     color: $site-title-color;
-  }
-
-  a {
-    font-size: 19px;
   }
 }
 
@@ -207,6 +203,7 @@
 .page-content {
   padding: $spacing-unit 0;
   flex: 1 0 auto;
+  justify-content: center;
 }
 
 .page-heading {
@@ -218,6 +215,9 @@
 }
 
 .post-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
   margin-left: 0;
   list-style: none;
 
@@ -229,11 +229,22 @@
 .post-meta {
   font-size: $small-font-size;
   color: $brand-color;
+  width: 392px;
+  padding: 5px;
+  text-align: center;
+
+  .post-image {
+    width: 382px;
+    height: 382px;
+    object-fit: cover;
+  }
 }
 
 .post-link {
   display: block;
-  @include relative-font-size(1.5);
+  @include relative-font-size(1);
+  font-weight: 400;
+  font-size: 14px;
 }
 
 
@@ -342,4 +353,47 @@
   .one-half {
     width: calc(50% - (#{$spacing-unit} / 2));
   }
+}
+
+.about {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  width: 600px;
+
+  font-family: "Raleway", serif;
+  font-size: 15px;
+  text-align: justify;
+  text-justify: auto;
+
+  .about-content {
+    width: 450px;
+    margin: 15px;
+  }
+
+  .about-image {
+    width: 400px;
+  }
+}
+
+.page-content .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.post-content img {
+  margin: 5px;
+  width: 80%;
+  object-fit: cover;
+}
+
+.post-header-image {
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 30px;
+}
+
+article.post {
+  width: 900px;
 }

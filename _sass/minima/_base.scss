@@ -106,8 +106,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-
-
 /**
  * Links
  */
@@ -281,4 +279,77 @@ table {
     -webkit-overflow-scrolling: touch;
             -ms-overflow-style: -ms-autohiding-scrollbar;
   }
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.social {
+  margin: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+fieldset {
+  border: 0;
+}
+
+.form-group {
+  display: flex;
+  align-content: center;
+
+  label {
+    width: 150px;
+    display: flex;
+    align-items: center;
+  }
+
+  input, textarea {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    margin: 5px;
+    width: 400px;
+
+    font-family: "Montserrat";
+    font-size: 14px;
+  }
+
+  textarea {
+    height: 200px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    width: 150px;
+    height: 30px;
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
+
+.fancy-button {
+  background: transparent none;
+    background-color: transparent;
+  border-color: currentColor;
+  border-width: 1px;
+  border-style: solid;
+  padding-top: calc(0.6rem - 1px);
+  padding-right: calc(1rem - 1px);
+  padding-bottom: calc(0.6rem - 1px);
+  padding-left: calc(1rem - 1px);
+  border-radius: 3px;
+  color: #b33d64;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
 }

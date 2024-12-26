@@ -1,6 +1,9 @@
 /**
  * Site header
  */
+
+$ringlov: #c70a46;
+
 .site-header {
   border-top: 5px solid $border-color-03;
   border-bottom: 1px solid $border-color-01;
@@ -11,14 +14,41 @@
   position: relative;
 }
 
+.block-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: column;
+}
+
 .site-title {
   @include relative-font-size(1.2);
-  font-weight: 600;
+  display: block;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
+  margin-top: 20px;
+  color: #222;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  text-transform: uppercase;
 
   @include media-query($on-palm) {
+    font-size: 20px;
+    margin-top: 0;
+    font-weight: 600;
+    padding-right: 45px;
+  }
+
+  @include media-query($on-laptop) {
+    font-size: 20px;
+    margin-top: 0;
+    font-weight: 600;
     padding-right: 45px;
   }
 
@@ -28,8 +58,23 @@
   }
 }
 
+.site-subtitle {
+  line-height: 1;
+  margin-left: 3px;
+  margin-bottom: 10px;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1em;
+  font-size: 14px;
+  text-transform: none;
+  text-decoration: none;
+  color: $ringlov;
+}
+
 .site-nav {
   position: absolute;
+  flex-grow: 1;
   top: 9px;
   right: $spacing-unit * .5;
   background-color: $background-color;
@@ -76,6 +121,9 @@
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-weight: 500;
     display: block;
     padding: 5px 10px;
     margin-left: 20px;
@@ -196,7 +244,6 @@
 }
 
 
-
 /**
  * Page content
  */
@@ -226,6 +273,12 @@
   }
 }
 
+@include media-query($on-palm) {
+  .post-list {
+    flex-flow: column nowrap;
+  }
+}
+
 .post-meta {
   font-size: $small-font-size;
   color: $brand-color;
@@ -247,7 +300,16 @@
   font-size: 14px;
 }
 
+@include media-query($on-laptop) {
+  .post-meta {
+    width: 300px;
 
+    .post-image {
+      width: 252px;
+      height: 252px;
+    }
+  }
+}
 
 /**
  * Posts
@@ -380,6 +442,12 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
+}
+
+@include media-query($on-laptop) {
+  .page-content {
+    padding-top: 10px;
+  }
 }
 
 .post-content img {

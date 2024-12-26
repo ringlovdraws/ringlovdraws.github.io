@@ -450,7 +450,11 @@ $ringlov: #c70a46;
   }
 
   @include media-query($on-laptop) {
-    flex-direction: column-reverse;
+    
+
+    .about-content {
+      width: 300px;
+    }
   }
 
   @include media-query($on-palm) {
@@ -504,14 +508,14 @@ a {
 .trigger {
   margin-top: 17px;
 
+  @include media-query($on-laptop) {
+    margin-top: 0;
 
-@include media-query($on-laptop) {
-  .page-content {
-    padding-top: 10px;
+    .page-content {
+      padding-top: 10px;
+    }
   }
 }
-}
-
 
 .about-image {
     width: 400px;

@@ -279,7 +279,7 @@ $ringlov: #c70a46;
 
 @include media-query($on-palm) {
   .post-list {
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
   }
 }
 

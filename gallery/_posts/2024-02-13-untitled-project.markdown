@@ -3,7 +3,6 @@ layout: page
 title:  "UNTITLED PROJECT"
 image: "/assets/images/JuCal-852x482.png"
 date:   2024-02-13 20:40:24 +0100
-comments: true
 categories:
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "ZAFIR"
 image: "/assets/images/Sniper_preview-1024x1024.png"
 date:   2024-12-25 21:04:24 +0100

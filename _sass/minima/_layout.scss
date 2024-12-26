@@ -136,6 +136,10 @@ $ringlov: #c70a46;
     &:not(:last-child) {
       margin-right: 0;
     }
+
+    &:hover {
+      color: #e68f9f !important;
+    }
   }
 
   @media screen and (min-width: $on-medium) {
@@ -163,6 +167,10 @@ $ringlov: #c70a46;
 
       &:not(:last-child) {
         margin-right: 20px;
+      }
+
+      &:hover {
+        color: #e68f9f !important;
       }
     }
   }
@@ -468,4 +476,24 @@ $ringlov: #c70a46;
 
 article.post {
   width: 900px;
+}
+
+a {
+  text-decoration: none !important;
+  color: #b33d64 !important;
+
+  &:hover {
+    color: #e68f9f !important;
+  }
+}
+
+.trigger {
+  margin-top: 17px;
+
+
+@include media-query($on-laptop) {
+  .page-content {
+    padding-top: 10px;
+  }
+}
 }

@@ -6,3 +6,9 @@ categories: blogpost
 ---
 
 Hello world
+
+Ovo je novi blog post
+
+I novi red
+
+Tralala

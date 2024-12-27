@@ -20,15 +20,23 @@
         </label>
 
         <div class="trigger">
+          {% comment %}
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            <a class="page-link {% if page.url==my_page.url %} current-page {% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
-          <a class="page-link" href="/">Portfolio</a>
+          {% endcomment %}
+          {% assign is_gallery=page.url | begins_with: '/gallery' %}
+          <a class="page-link {% if page.url=='/' or is_gallery %} current-page {% endif %}" href="/">Portfolio</a>
+          <a class="page-link {% if page.url=='/about/' %} current-page {% endif %}" href="/about">About</a>
+          <a class="page-link {% if page.url=='/contact/' %} current-page {% endif %}" href="/contact">Contact</a>
+          <a class="page-link {% if page.url=='/blog/' %} current-page {% endif %}" href="/blog">Blog</a>
+          <a class="page-link {% if page.url=='/shop/' %} current-page {% endif %}" href="https://ko-fi.com/ringlov/shop" target="_blank">Shop</a>
         </div>
       </nav>
     {%- endif -%}
   </div>
 </header>
+

@@ -2,7 +2,13 @@
  * Site header
  */
 
-$ringlov: #c70a46;
+$darkpink : #b33d64;
+$brightpink: #c70a46;
+$lightpink: #e68f9f;
+$notblack: #222;
+$bodytext: #575757;
+$lightgrey: #999;
+$lightestgrey: #b3b3b3;
 
 .site-header {
   border-top: 5px solid $border-color-03;
@@ -27,10 +33,10 @@ $ringlov: #c70a46;
 .site-title {
   @include relative-font-size(1.2);
   display: block;
-  letter-spacing: -1px;
+  letter-spacing: 0.0714286em;
   margin-bottom: 0;
   margin-top: 20px;
-  color: #222 !important;
+  color: $notblack !important;
   font-family: Montserrat;
   font-weight: 400;
   font-style: normal;
@@ -61,7 +67,7 @@ $ringlov: #c70a46;
   }
 
   &:hover {
-    color: #222 !important;
+    color: $notblack !important;
   }
 }
 
@@ -76,8 +82,8 @@ $ringlov: #c70a46;
   font-size: 14px;
   text-transform: none;
   text-decoration: none;
-  color: $ringlov;
-  letter-spacing: 0.14em;
+  color: $brightpink;
+  letter-spacing: 0.142857em;
 }
 
 .site-nav {
@@ -127,14 +133,17 @@ $ringlov: #c70a46;
   }
 
   .page-link {
-    color: $text-color;
+    font-family: Open Sans;
+    color: $lightgrey !important;
     line-height: $base-line-height;
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-variant: small-caps;
-    font-weight: 500;
+    font-weight: 400;
     display: block;
     padding: 5px 10px;
     margin-left: 20px;
+    letter-spacing: 1px;
+    font-size: 13px;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -142,9 +151,13 @@ $ringlov: #c70a46;
     }
 
     &:hover {
-      color: #e68f9f !important;
+      color: $lightpink !important;
     }
   }
+
+  .current-page {
+      color: $brightpink !important;
+    }
 
   @media screen and (min-width: $on-medium) {
     position: static;
@@ -174,7 +187,7 @@ $ringlov: #c70a46;
       }
 
       &:hover {
-        color: #e68f9f !important;
+        color: $lightpink !important;
       }
     }
   }
@@ -312,8 +325,16 @@ $ringlov: #c70a46;
 .post-link {
   display: block;
   @include relative-font-size(1);
-  font-weight: 400;
-  font-size: 14px;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 2em;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: .06em;
+  color: $bodytext !important;
 }
 
 @include media-query($on-laptop) {
@@ -496,10 +517,10 @@ article.post {
 
 a {
   text-decoration: none !important;
-  color: #b33d64 !important;
+  color: $brightpink !important;
 
   &:hover {
-    color: #e68f9f !important;
+    color: $lightpink !important;
   }
 }
 

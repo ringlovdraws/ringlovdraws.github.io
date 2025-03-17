@@ -544,3 +544,53 @@ a {
       width: 366px !important;
     }
 }
+
+h1 {
+  color: $darkpink;
+  text-decoration: none;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.5em;
+  font-size: 2.2em;
+  text-transform: none;
+  letter-spacing: .06em;
+}
+
+h2 {
+  color: $lightpink;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2em;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .2em;
+}
+
+h3 {
+  color: #454545;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .2em;
+}
+
+#landing, #landing_socials, #mc_embed_shell, #mc_embed_signup {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+input.button {
+  background-color: $darkpink !important;
+}
+
+input.button:hover {
+  background-color: $lightpink !important;
+}

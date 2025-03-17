@@ -587,6 +587,14 @@ h3 {
   justify-content: center;
 }
 
+.indicates-required {
+  margin-right: 0 !important;
+}
+
+.mc-field-group {
+  width: 100% !important;
+}
+
 input.button {
   background-color: $darkpink !important;
 }

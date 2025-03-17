@@ -1,12 +1,12 @@
 ---
-layout: base
+layout: basenoheader
 title: Landing page
 permalink: /landing/
 ---
 <div id="landing">
 	<div>Thanks for visiting!<br/>My portfolio website is currently undergoing some maintenance, so in the meantime
 	<br/><br/>
-	<b>follow me on social media:</b></div><br/>
+	follow me on social media:</div><br/>
 
 	<div class="socials" id="landing_socials">
 		<a href="https://bsky.app/profile/ringlov.bsky.social">
@@ -20,7 +20,7 @@ permalink: /landing/
 		</a>
 	</div><br/>
 
-	<div><b>or subscribe to my mailing list to receive occasional updates from me:</b></div>
+	<div>or subscribe to my mailing list to receive occasional updates from me:</div>
 
 	<div id="mc_embed_shell">
 	      <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">

@@ -14,22 +14,19 @@ I currently live, draw, and play RPGs in Belgrade, Serbia, with my partner and t
 **Follow me on social media:**
 
 <div class="socials">
-	<a href="https://mastodon.art/@ringlov">
-		<i class="fab fa-mastodon social"></i>
-	</a>
-	<a href="https://twitter.com/ringlovdraws">
-		<i class="fab fa-twitter social"></i>
+	<a href="https://bsky.app/profile/ringlov.bsky.social">
+		<i class="fab fa-bluesky social"></i>
 	</a>
 	<a href="https://ringlov.tumblr.com">
 		<i class="fab fa-tumblr social"></i>
 	</a>
-	<a href="https://bsky.app/profile/ringlov.bsky.social">
-		<i class="fab fa-bluesky social"></i>
+	<a href="https://mastodon.art/@ringlov">
+		<i class="fab fa-mastodon social"></i>
 	</a>
 </div>
 
-**Or talk to me directly:**
+<!--- **Or talk to me directly:**
 
 <a href="/contact/">
 <button class="fancy-button">Contact Form!</button>
-</a>
+</a> --->

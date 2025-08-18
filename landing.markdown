@@ -30,7 +30,7 @@ permalink: /landing/
 	           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 	</style>
 	<div id="mc_embed_signup">
-	    <form action="https://duck.us17.list-manage.com/subscribe/post?u=c528d8cee349e77a1584f9c16&amp;id=2d795c3c3a&amp;f_id=005cc2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+	    <form action="https://duck.us17.list-manage.com/subscribe/post?u=c528d8cee349e77a1584f9c16&amp;id=2d795c3c3a&amp;f_id=0064c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 	        <div id="mc_embed_signup_scroll"><h2></h2>
 	            <div class="indicates-required"><span class="asterisk">*</span> required</div>
 	            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>

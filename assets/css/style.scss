@@ -6,4 +6,5 @@
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 
-#mc_embed_shell { width: 500px !important; display: flex; }
+#landing { width: 100%; }
+#mc_embed_shell { width: 90%; !important; display: flex; }

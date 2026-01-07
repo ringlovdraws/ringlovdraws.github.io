@@ -311,7 +311,6 @@ $lightestgrey: #b3b3b3;
 .post-meta {
   font-size: $small-font-size;
   color: $brand-color;
-  width: 392px;
   padding: 5px;
   text-align: center;
 
@@ -364,6 +363,10 @@ $lightestgrey: #b3b3b3;
   @media screen and (min-width: $on-large) {
     @include relative-font-size(2.625);
   }
+}
+
+.post-title {
+  text-align: center;
 }
 
 .post-content {

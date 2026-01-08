@@ -17,14 +17,20 @@ layout: base
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
       <li>
-        <div class="post-meta">
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <!--<div><img class="post-image" src="/assets/images/{{ post.image }}" /></div>-->
-          <div><a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
+        <div class="post-meta ana-post">
+          <div>
+            <div>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </div>
+            <div class="post-meta">{{ post.date | date: date_format }}</div>
+            <span class="post-description">{{ post.description }}</span>
           </div>
-        </div>
+          <div>
+            <img class="post-image" src="{{ post.image }}" />
+          </div>
+
         <!--
           {%- if site.show_excerpts -%}
             {{ post.excerpt }}

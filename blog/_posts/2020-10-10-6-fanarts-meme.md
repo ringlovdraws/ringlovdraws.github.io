@@ -1,12 +1,20 @@
 ---
-layout: 	post
+layout:		post
 title:		"6 fanarts, 6 months late"
-date: 		2020-10-10 19:19:19 +0100
-categories: blogpost art digital fanart mental-health painting procreate
-comments: 	false
-permalink: /blog/:year/:title
-image: /assets/images/6_fanarts/IMG_2756.jpg
+date:		2020-10-10 19:19:19 +0100
+categories:	blogpost
+tags:		art digital fanart mental-health painting procreate
+comments:	false
+permalink:	/blog/:year/:title
+image:		/assets/images/6_fanarts/IMG_2756.jpg
 description: I finally drew the 6 fanarts meme requests I received…
+gallery:
+  - "6_fanarts/IMG_2750.jpg"
+  - "6_fanarts/IMG_2751.jpg"
+  - "6_fanarts/IMG_2752.jpg"
+  - "6_fanarts/IMG_2753.jpg"
+  - "6_fanarts/IMG_2754.jpg"
+  - "6_fanarts/IMG_2755.jpg"
 ---
 
 Heyyyy, remember that thing everyone did like 6 months ago... you may remember i posted a couple of wips back in uhhhhh April? May? but I just couldn’t get myself to draw all 6. Tfw when 6 is too much hahah. It was a rough time for me.
@@ -15,9 +23,6 @@ ANYWAY i’ve been feeling a little better lately, and would you look at that �
 
 This is 100% NOT what i’m supposed to be working on, which is storyboarding, but it’s fine. It’s fine. Baby steps.
 
-![Image]({{ site.baseurl }}/assets/images/6_fanarts/IMG_2756.jpg)
-
-
-(ovde je bio carousel sa svih 6 crteza)
+{% include gallery.html %}
 
 Aeryn was a freebie from me to me, I had a free slot and was feeling nostalgic for the time she was all I ever drew :’). And i still can’t draw her right. I feel bad I made Fenris sad, I always draw him sad when I don’t pay attention :(

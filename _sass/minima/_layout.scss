@@ -7,8 +7,9 @@ $brightpink: #c70a46;
 $lightpink: #e68f9f;
 $notblack: #222;
 $bodytext: #575757;
-$lightgrey: #999;
-$lightestgrey: #b3b3b3;
+$midgrey: #999;
+$lightgrey: #b3b3b3;
+$lightestgrey: #f0f0f0;
 
 .site-header {
 	border-top: 5px solid $border-color-03;
@@ -134,7 +135,7 @@ $lightestgrey: #b3b3b3;
 
 	.page-link {
 		font-family: Open Sans;
-		color: $lightgrey !important;
+		color: $midgrey !important;
 		line-height: $base-line-height;
 		text-transform: uppercase;
 		font-variant: small-caps;
@@ -320,13 +321,28 @@ ul.contact-list {
 	@include relative-font-size(2);
 }
 
+/**
+ * Blog roll setup
+ **/
+
+.blog-heading {
+	text-align: center;
+}
+
 .post-list-heading {
 	@include relative-font-size(1.75);
 }
 
+.blog-roll-container {
+	width: 100vw;
+	max-width: $content-width;
+	display: flex;
+	justify-content: space-between;
+}
+
 .post-list {
 	display: block;
-	flex-flow: row wrap;
+	flex-flow: row no-wrap;
 	justify-content: center;
 	margin-left: 0;
 	list-style: none;
@@ -344,25 +360,54 @@ ul.contact-list {
 
 .post-meta {
 	font-size: $small-font-size;
-	color: $lightestgrey;
+	color: $lightgrey;
 	padding: 5px;
 	text-align: center;
 
 	.post-image {
-		padding: 5px;
 		margin-left: $spacing-unit;
-		width: 20vh;
-		height: 20vh;
+		width: 15vh;
+		height: 15vh;
 		object-fit: cover;
 		border-radius: 30px;
 	}
 }
 
-.post-listing {
+.pinned-post-list {
 	display: flex;
-	justify-content: space-between;
-	border-style: solid;
-	border-color: red;
+	flex-direction: row-reverse;
+}
+
+.blog-roll-main {
+	flex-grow: 2;
+	margin: $spacing-unit;
+}
+
+.post-list .pinned-post {
+	width: 30vw;
+	max-width: $content-width;
+	list-style-type: none;
+  border: 1px solid $lightgrey;
+  background-color: $lightestgrey;
+  padding: 5px;
+  margin-bottom: $spacing-unit;
+  border-radius: 3px;
+}
+
+.post-listing, .post-listing.pinned-post {
+	display: flex;
+	justify-content: space-between !important;
+	padding: $spacing-unit * .5;
+	border: 5px solid; 	/** to be removed eventually **/
+	border-color: red; 		/** to be removed eventually **/
+
+	.post-meta {
+		text-align: left;
+	}
+}
+
+.post-listing-text {
+	text-align: left;
 }
 
 .post-link {
@@ -391,14 +436,10 @@ ul.contact-list {
 	}
 }
 
-.post-list li.pinned {
-	list-style-type: none;
-  border: 1px solid #d3d3d3;
-  background-color: #f9f9f9;
-  padding: 5px;
-  margin-bottom: $spacing-unit;
-  border-radius: 3px;
+.blog-roll-sidebar {
+	margin: $spacing-unit;
 }
+
 
 
 /**
@@ -406,6 +447,11 @@ ul.contact-list {
  */
 .post-header {
 	margin-bottom: $spacing-unit;
+}
+
+.post-content {
+	width: 50vw;
+	max-width: $content-width;
 }
 
 .post-title,

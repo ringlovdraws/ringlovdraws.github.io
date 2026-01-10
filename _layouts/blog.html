@@ -14,11 +14,15 @@ layout: base
 			<h2 class="post-list-heading">{{ page.list_title }}</h2>
 		{%- endif -%}
 
+		<div class="blog-heading">
+			<h2>Blog</h2>
+		</div>
+
 		<!-- Pinned Posts Section -->
 	  <!-- scan through posts to find posts tagged pinned, so they can be generated first, and with a custom css -->
-	  <ul class="post-list">
+	  <ul class="post-list pinned-post-list">
 	    {% for post in site.posts %} {% if post.tags contains 'pinned' %}
-	    <li class="pinned">
+	    <!-- <li class="pinned-post post-listing">
 	      <span class="post-date post-meta">Pinned Post</span>
 	      <a class="post-link" href="{{ post.url | relative_url }}">
 					{{ post.title | escape }}
@@ -29,37 +33,75 @@ layout: base
 	      {% else %}
 	      <p>{{ post.description }}</p>
 	      {% endif %}
-	    </li>
-	    {% endif %} {% endfor %}
-	  </ul>
+	    </li> -->
 
-		<!-- Normal post list -->
-		<ul class="post-list">
-			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-			{%- for post in posts -%}
-			<li>
-				<div class="post-meta post-listing">
-					<div>
+	    <li>
+				<div class="post-meta post-listing pinned-post">
+					<div class="post-listing-text">
 						<div>
 							<a class="post-link" href="{{ post.url | relative_url }}">
 								{{ post.title | escape }}
 							</a>
 						</div>
-						<div class="post-meta">{{ post.date | date: date_format }}</div>
+						<!-- <div class="post-meta">{{ post.date | date: date_format }}</div> -->
 						<span class="post-description plain-text">{{ post.description }}</span>
 					</div>
 					<div>
 						<img class="post-image" src="{{ post.image }}" />
 					</div>
+					<i class="fa-solid fa-thumbtack"></i>
+				</div>
+	    </li>
 
-				<!--
-					{%- if site.show_excerpts -%}
-						{{ post.excerpt }}
-					{%- endif -%}
-				-->
-			</li>
-			{%- endfor -%}
-		</ul>
+	    {% endif %} {% endfor %}
+	  </ul>
+
+		<!-- Normal post list -->
+		<div class="blog-roll-container">
+
+			<div class="blog-roll-main">
+				<h2>Latest posts</h2>
+				<ul class="post-list">
+					{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+					{%- for post in posts -%}
+					<li>
+						<div class="post-listing post-meta">
+							<div class="post-listing-text">
+								<div>
+									<a class="post-link" href="{{ post.url | relative_url }}">
+										{{ post.title | escape }}
+									</a>
+								</div>
+								<div class="post-meta">{{ post.date | date: date_format }}</div>
+								<span class="post-description plain-text">{{ post.description }}</span>
+								<div>
+									<a class="read-more" href="{{ post.url | relative_url }}">
+										Read more
+									</a>
+								</div>
+							</div>
+							<div>
+								<img class="post-image" src="{{ post.image }}" />
+							</div>
+						</div>
+
+						<!--
+							{%- if site.show_excerpts -%}
+								{{ post.excerpt }}
+							{%- endif -%}
+						-->
+					</li>
+					{%- endfor -%}
+				</ul>
+			</div>
+
+			<div class="blog-roll-sidebar">
+				<h3>Categories</h3>
+
+				<h3>Tags</h3>
+
+			</div>
+		</div>
 
 		{% if site.paginate %}
 			<div class="pager">

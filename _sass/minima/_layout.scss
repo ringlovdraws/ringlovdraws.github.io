@@ -544,39 +544,6 @@ ul.contact-list {
 	}
 }
 
-.about {
-	display: flex !important;
-	flex-direction: row;
-	justify-content: center;
-	width: 700px;
-
-	font-family: "Raleway", serif;
-	font-size: 15px;
-	text-align: justify;
-	text-justify: auto;
-
-	.about-content {
-		width: 450px;
-		margin: 15px;
-	}
-
-	@include media-query($on-laptop) {
-		.about-content {
-			width: 300px;
-		}
-	}
-
-	@include media-query($on-palm) {
-		flex-direction: column-reverse;
-		width: 100%;
-
-		.about-content {
-			width: 95%;
-			margin: 5px;
-		}
-	}
-}
-
 .page-content .wrapper {
 	display: flex;
 	justify-content: center;
@@ -615,7 +582,6 @@ ul.contact-list {
 }
 
 article.post {
-	width: 900px;
 
 	@include media-query($on-palm) {
 		flex-direction: column-reverse;
@@ -643,13 +609,6 @@ a {
 			padding-top: 10px;
 		}
 	}
-}
-
-.about-image {
-		width: 100vw;
-		margin-top: $spacing-unit;
-
-		
 }
 
 h1 {
@@ -709,6 +668,48 @@ input.button {
 input.button:hover {
 	background-color: $lightpink !important;
 }
+
+
+
+/**** Misc ****/
+
+.post-content.about {
+	display: flex !important;
+	flex-flow: row no-wrap;
+	justify-content: space-between;
+	margin: 0;
+
+	/* .about-content {
+		width: 50vw;
+		margin: $spacing-unit;
+	} */
+
+	/* @include media-query($on-laptop) {
+		.about-content {
+			width: 300px;
+		}
+	} */
+
+	@include media-query($on-palm) {
+		flex-flow: column-reverse wrap;
+
+		.about-content {
+			margin: 5px;
+		}
+	}
+}
+
+img.about-image {
+	width: 100%;
+}
+
+.about-content {
+	text-align: justify;
+	margin: $spacing-unit;
+}
+
+
+
 
 .fa-bluesky {
 	font-size: 1.5em;

@@ -37,6 +37,9 @@ layout: base
 
 	    <li>
 				<div class="post-meta post-listing pinned-post">
+					<div>
+						<img class="post-image" src="{{ post.image }}" />
+					</div>
 					<div class="post-listing-text">
 						<div>
 							<a class="post-link" href="{{ post.url | relative_url }}">
@@ -47,9 +50,6 @@ layout: base
 						<span class="post-description plain-text">
 							{{ post.description }}
 						</span>
-					</div>
-					<div>
-						<img class="post-image" src="{{ post.image }}" />
 					</div>
 				</div>
 				<i class="fa-solid fa-thumbtack post-pin"></i>
@@ -68,6 +68,9 @@ layout: base
 					{%- for post in posts -%}
 					<li>
 						<div class="post-listing post-meta">
+							<div>
+								<img class="post-image" src="{{ post.image }}" />
+							</div>
 							<div class="post-listing-text">
 								<div>
 									<a class="post-link" href="{{ post.url | relative_url }}">
@@ -82,12 +85,10 @@ layout: base
 								</span>
 								<div>
 									<a class="read-more" href="{{ post.url | relative_url }}">
-										Read more
+										<br />
+										(Read more...)
 									</a>
 								</div>
-							</div>
-							<div>
-								<img class="post-image" src="{{ post.image }}" />
 							</div>
 						</div>
 

@@ -338,6 +338,10 @@ ul.contact-list {
 	max-width: $content-width - $spacing-unit *2;
 	display: flex;
 	justify-content: space-between;
+
+	@include media-query($on-palm) {
+		flex-direction: column;
+	}
 }
 
 .post-list {
@@ -352,12 +356,6 @@ ul.contact-list {
 	}
 }
 
-@include media-query($on-palm) {
-	.post-list {
-		flex-flow: column wrap;
-	}
-}
-
 .post-meta {
 	font-size: $small-font-size;
 	color: $lightgrey;
@@ -365,7 +363,7 @@ ul.contact-list {
 	text-align: center;
 
 	.post-image {
-		margin-left: $spacing-unit;
+		margin-right: $spacing-unit;
 		width: 15vh;
 		height: 15vh;
 		object-fit: cover;
@@ -381,10 +379,11 @@ ul.contact-list {
 .blog-roll-main {
 	flex-grow: 2;
 	margin: $spacing-unit;
+
 }
 
 .post-list .pinned-post {
-	width: 30vw;
+	min-width: 30vw;
 	max-width: $content-width;
 	list-style-type: none;
   border: 1px solid $lightgrey;
@@ -392,11 +391,25 @@ ul.contact-list {
   padding: 5px;
   margin-bottom: $spacing-unit;
   border-radius: 3px;
+
+	@include media-query($on-laptop) {
+		flex-flow: column wrap;
+		max-width: $content-width;
+		width: 80vw;
+		padding: 5px;
+	}	
+
+	@include media-query($on-palm) {
+		flex-flow: column wrap;
+		max-width: $content-width;
+		width: 80vw;
+		padding: 5px;
+	}
 }
 
 .post-listing, .post-listing.pinned-post {
 	display: flex;
-	justify-content: space-between !important;
+	justify-content: flex-start;
 	padding: $spacing-unit * .5;
 	/** border: 5px solid; 	 to be removed eventually **/
 	/** border-color: red; 		 to be removed eventually **/
@@ -404,6 +417,12 @@ ul.contact-list {
 	.post-meta {
 		text-align: left;
 	}
+
+	@include media-query($on-palm) {
+			flex-flow: column wrap;
+			max-width: $content-width;
+			padding: 5px;
+		}
 }
 
 .post-listing-text {
@@ -440,8 +459,16 @@ ul.contact-list {
 	}
 }
 
+.read-more {
+	margin-top: $spacing-unit;
+}
+
 .blog-roll-sidebar {
 	margin: $spacing-unit;
+
+	@include media-query($on-palm) {
+			/** display: none; **/
+		}
 }
 
 
@@ -781,7 +808,7 @@ li:has(> i.post-pin) {
 }
 
 .post-pin {
-	font-size: 2em;
+	font-size: 1.5em;
 	position: absolute;
   top: 10px;
   right: 15px;

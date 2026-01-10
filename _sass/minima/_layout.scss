@@ -359,7 +359,7 @@ $lightestgrey: #b3b3b3;
   border: 1px solid #d3d3d3;
   background-color: #f9f9f9;
   padding: 5px;
-  margin-bottom: 29px;
+  margin-bottom: $spacing-unit;
   border-radius: 3px;
 }
 
@@ -453,6 +453,12 @@ $lightestgrey: #b3b3b3;
 		max-height: 20vh;
 		max-width: 20vh;
 		flex-grow: 1;
+
+		@include media-query($on-palm) {
+			flex-direction: column-reverse;
+			max-width: 40vw;
+			min-height: 40vw;
+		}
 	}
 
 	img {
@@ -554,15 +560,32 @@ $lightestgrey: #b3b3b3;
 }
 
 .post-header-image {
+	display: flex;
+	justify-content: center;
+	max-width: 50vh;
 	object-fit: cover;
 	border-radius: 30px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 30px;
+	margin-bottom: $spacing-unit;
+
+	@include media-query($on-palm) {
+		flex-direction: column-reverse;
+		margin: auto;
+		margin-bottom: $spacing-unit;
+		max-width: 90vw;
+		min-height: 90vw;
+	}
 }
 
 article.post {
 	width: 900px;
+
+	@include media-query($on-palm) {
+		flex-direction: column-reverse;
+		max-width: 90vw;
+		min-height: 90vw;
+	}
 }
 
 a {
@@ -588,7 +611,7 @@ a {
 
 .about-image {
 		width: 400px;
-		margin-top: 30px;
+		margin-top: $spacing-unit;
 
 		@include media-query($on-palm) {
 			width: 366px !important;

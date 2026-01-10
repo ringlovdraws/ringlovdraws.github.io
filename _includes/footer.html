@@ -14,18 +14,7 @@
 				</p>
 			</div>
 			<div class="footer-col socials footer-socials">
-				<a href="https://bsky.app/profile/ringlov.bsky.social">
-					<i class="fab fa-bluesky social"></i>
-				</a>
-				<a href="https://ringlov.tumblr.com">
-					<i class="fab fa-tumblr social"></i>
-				</a>
-				<a href="https://mastodon.art/@ringlov">
-					<i class="fab fa-mastodon social"></i>
-				</a>
-				<a href="https://cara.app/ringlov">
-					<i class="fa-solid fa-copyright"></i>
-				</a>
+				{% include social.html %}
 			</div>
 			{%- if site.author %} <!-- liquid that inserts the contact info -->
 				<div class="footer-col footer-contact">
@@ -49,10 +38,6 @@
 				<!-- <p>{{ site.description | escape }}</p> -->
 			</div>
 		</div>
-
-		<!-- <div class="social-links">
-			{%- include social.html -%}
-		</div> -->
 
 	</div>
 

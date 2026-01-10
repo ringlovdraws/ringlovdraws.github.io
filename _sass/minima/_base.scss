@@ -137,6 +137,7 @@ a {
 
   .social-media-list &:hover {
     text-decoration: none;
+    color: #e68f9f;
 
     .username {
       text-decoration: underline;
@@ -246,6 +247,14 @@ pre {
 
 .grey {
   color: #828282;
+}
+
+.pink {
+  color: #c70a46;
+
+  a:hover {
+    color: #e68f9f;
+  }
 }
 
 .svg-icon {

@@ -23,6 +23,9 @@ I currently live, draw, and play RPGs in Belgrade, Serbia, with my partner and t
 	<a href="https://mastodon.art/@ringlov">
 		<i class="fab fa-mastodon social"></i>
 	</a>
+	<a href="https://cara.app/ringlov">
+		<i class="fa-solid fa-copyright"></i>
+	</a>
 </div>
 
 <!--- **Or talk to me directly:**

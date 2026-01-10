@@ -9,9 +9,24 @@
           <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
             <svg class="svg-icon red">
               <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>RSS</span>
+            </svg><span></span>
           </a>
         </p>
+      </div>
+      <div class="footer-col-2 socials footer-socials">
+        <a href="https://bsky.app/profile/ringlov.bsky.social">
+          <i class="fab fa-bluesky social"></i>
+        </a>
+        <a href="https://ringlov.tumblr.com">
+          <i class="fab fa-tumblr social"></i>
+        </a>
+        <a href="https://mastodon.art/@ringlov">
+          <i class="fab fa-mastodon social"></i>
+        </a>
+        <a href="https://cara.app/ringlov">
+          <i class="fa-solid fa-copyright"></i>
+        </a>
+      </div>
       {%- if site.author %}
         <ul class="contact-list">
           {% if site.author.name -%}
@@ -28,9 +43,9 @@
       </div>
     </div>
 
-    <div class="social-links">
+    <!-- <div class="social-links">
       {%- include social.html -%}
-    </div>
+    </div> -->
 
   </div>
 

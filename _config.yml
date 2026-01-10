@@ -57,3 +57,12 @@ plugins:
 
 collections:
   - gallery
+
+minima:
+  social_links:
+    - title: cara
+      platform: cara
+      user_url: "https://cara.app/ringlov"
+    - title: bluesky
+      platform: bluesky
+      user_url: "https://bsky.app/profile/ringlov.bsky.social"

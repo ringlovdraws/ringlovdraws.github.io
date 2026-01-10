@@ -20,8 +20,8 @@ layout: base
 	    {% for post in site.posts %} {% if post.tags contains 'pinned' %}
 	    <li class="pinned">
 	      <span class="post-date post-meta">Pinned Post</span>
-	      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-	      	{{ post.title }}
+	      <a class="post-link" href="{{ post.url | relative_url }}">
+					{{ post.title | escape }}
 	      </a>
 	      <br />
 	      {% if post.custom_excerpt %}

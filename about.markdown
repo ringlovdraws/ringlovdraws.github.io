@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /about/
-image: "IMG-2372.jpg"
+image: "pages/IMG-2372.jpg"
 ---
 
 **I am a digital artist with a penchant for character concept art and character illustration, and a focus on colour and narrative.**

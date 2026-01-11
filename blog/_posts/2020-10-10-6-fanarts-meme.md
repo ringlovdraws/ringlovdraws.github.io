@@ -2,6 +2,7 @@
 layout:		post
 title:		"6 fanarts, 6 months late"
 date:		2020-10-10 19:19:19 +0100
+author: 	ana
 categories:	blogpost
 tags:		art digital fanart mental-health painting procreate
 comments:	false
@@ -9,12 +10,18 @@ permalink:	/blog/:year/:title
 image:		/assets/images/6_fanarts/IMG_2756.JPG
 description: I finally drew the 6 fanarts meme requests I received…
 gallery:
-  - "6_fanarts/IMG_2750.JPG"
-  - "6_fanarts/IMG_2751.JPG"
-  - "6_fanarts/IMG_2752.JPG"
-  - "6_fanarts/IMG_2753.JPG"
-  - "6_fanarts/IMG_2754.JPG"
-  - "6_fanarts/IMG_2755.JPG"
+  - url: "6_fanarts/IMG_2750.JPG"
+    alt: "Ovo je alt text"
+  - url: "6_fanarts/IMG_2751.JPG"
+    alt: "Ovo je alt text"
+  - url: "6_fanarts/IMG_2752.JPG"
+    alt: "Ovo je alt text"
+  - url: "6_fanarts/IMG_2753.JPG"
+    alt: "Ovo je alt text"  
+  - url: "6_fanarts/IMG_2754.JPG"
+    alt: "Ovo je alt text"  
+  - url: "6_fanarts/IMG_2755.JPG"
+    alt: "Ovo je alt text"  
 ---
 
 Heyyyy, remember that thing everyone did like 6 months ago... you may remember i posted a couple of wips back in uhhhhh April? May? but I just couldn’t get myself to draw all 6. Tfw when 6 is too much hahah. It was a rough time for me.

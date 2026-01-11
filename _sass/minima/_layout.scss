@@ -784,17 +784,21 @@ input.button:hover {
 /**** Misc ****/
 
 .post-content.about {
-	width: 100vw;
 	max-width: $content-width - $spacing-unit*2;
+	width: 90vw;
+	margin: 5px;
 	display: flex !important;
 	flex-flow: row no-wrap;
 	justify-content: space-between;
-	margin: 0;
 
-	/* .about-content {
-		width: 50vw;
-		margin: $spacing-unit;
-	} */
+	.about-image {
+		flex: 1 1 50%;
+	}
+
+	.about-content {
+		flex: 1 1 50%;
+		text-align: justify;
+	}
 
 	/* @include media-query($on-laptop) {
 		.about-content {
@@ -804,13 +808,21 @@ input.button:hover {
 
 	@include media-query($on-palm) {
 		flex-flow: column-reverse wrap;
+		align-items: center;
 
 		.about-content {
 			margin: 5px;
 		}
+
+		.about-image {
+			margin: 0;
+			width: 85vw;
+		}
 	}
 }
 
+
+/*
 img.about-image {
 	width: 100%;
 }
@@ -819,6 +831,7 @@ img.about-image {
 	text-align: justify;
 	margin: $spacing-unit;
 }
+*/
 
 
 

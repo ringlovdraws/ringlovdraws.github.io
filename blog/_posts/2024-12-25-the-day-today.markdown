@@ -2,6 +2,7 @@
 layout:		post
 title:		"The Day Today"
 date:		2024-12-25 21:04:24 +0100
+author: 	ana
 categories:	blogpost
 tags: 		mental-health tralala
 comments:	false

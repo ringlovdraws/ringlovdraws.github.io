@@ -69,3 +69,19 @@ minima:
     - title: bluesky
       platform: bluesky
       user_url: "https://bsky.app/profile/ringlov.bsky.social"
+
+jekyll-archives:
+  enabled: all
+  layout: archive
+  layouts:
+    year: year-archive
+    month: month-archive
+    day: day-archive
+    category: category-archive
+    tag: tag-archive
+  permalinks:
+    year: '/blog-archive/:year/'
+    month: '/blog-archive/:year/:month/'
+    day: '/blog-archive/:year/:month/:day/'
+    tag: '/blog-archive/tag/:name/'
+    category: '/blog-archive/category/:name/'

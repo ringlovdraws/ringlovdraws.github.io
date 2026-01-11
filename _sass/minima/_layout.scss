@@ -304,7 +304,9 @@ ul.contact-list {
 
 .footer-logo {
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
 }
 
 
@@ -340,6 +342,10 @@ ul.contact-list {
 	display: flex;
 	justify-content: space-between;
 
+	@include media-query($on-laptop) {
+		flex-direction: column;
+	}
+
 	@include media-query($on-palm) {
 		flex-direction: column;
 	}
@@ -347,7 +353,7 @@ ul.contact-list {
 
 .post-list {
 	display: block;
-	flex-flow: row no-wrap;
+	flex-flow: row nowrap;
 	justify-content: center;
 	margin-left: 0;
 	list-style: none;
@@ -369,6 +375,10 @@ ul.contact-list {
 		height: 15vh;
 		object-fit: cover;
 		border-radius: 30px;
+
+		@include media-query($on-palm) {
+			margin: 0;
+		}
 	}
 }
 
@@ -412,19 +422,63 @@ ul.contact-list {
 	display: flex;
 	justify-content: flex-start;
 	padding: $spacing-unit * .5;
-	/** border: 5px solid; 	 to be removed eventually **/
-	/** border-color: red; 		 to be removed eventually **/
+	/** border: 5px solid;	to be removed eventually **/
+	/** border-color: red;	to be removed eventually **/
 
 	.post-meta {
 		text-align: left;
 	}
 
+	@include media-query($on-laptop) {
+		flex-flow: row nowrap;
+		max-width: $content-width;
+		padding: 0;
+
+		.post-meta {
+			width: 100%;
+
+			.post-image {
+				width: 252px;
+				height: 252px;
+			}
+		}
+	}
+
+	@include media-query($on-palm) {
+		flex-flow: column wrap;
+		max-width: $content-width;
+		padding: 0;
+	}
+}
+
+.post-listing.pinned-post {
+
+	.post-link {
+		padding-right: $spacing-unit *.5;
+	}
+
+	@include media-query($on-laptop) {
+		flex-flow: row nowrap;
+		max-width: $content-width;
+		padding: $spacing-unit * .5;
+
+		.post-meta {
+			width: 100%;
+
+			.post-image {
+				width: 252px;
+				height: 252px;
+			}
+		}
+	}
+
 	@include media-query($on-palm) {
 			flex-flow: column wrap;
 			max-width: $content-width;
-			padding: 5px;
+			padding: $spacing-unit * .5;
 		}
 }
+
 
 .post-listing-text {
 	text-align: left;
@@ -788,7 +842,7 @@ input.button:hover {
 	width: 90vw;
 	margin: 5px;
 	display: flex !important;
-	flex-flow: row no-wrap;
+	flex-flow: row nowrap;
 	justify-content: space-between;
 
 	.about-image {
@@ -820,20 +874,6 @@ input.button:hover {
 		}
 	}
 }
-
-
-/*
-img.about-image {
-	width: 100%;
-}
-
-.about-content {
-	text-align: justify;
-	margin: $spacing-unit;
-}
-*/
-
-
 
 
 .fa-bluesky {

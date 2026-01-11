@@ -54,6 +54,12 @@ layout: base
 						<span class="post-description plain-text">
 							{{ post.description }}
 						</span>
+						<div>
+							<a class="read-more" href="{{ post.url | relative_url }}">
+								<br />
+								(Read more...)
+							</a>
+						</div>
 					</div>
 				</div>
 				<i class="fa-solid fa-thumbtack post-pin"></i>

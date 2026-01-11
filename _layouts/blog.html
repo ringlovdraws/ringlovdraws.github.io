@@ -117,9 +117,14 @@ layout: base
 			</div>
 
 			<div class="blog-roll-sidebar">
-				<h3>Tags</h3>
+				<div class="sidebar-item tags">
+					<h3>Tags</h3>
+					{% include tagcloud.html %}
+				</div>
 
-				<h3>Archive</h3>
+				<div class="sidebar-item archive">
+					<h3>Archive</h3>
+				</div>
 
 			</div>
 		</div>

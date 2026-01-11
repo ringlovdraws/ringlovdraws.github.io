@@ -38,7 +38,11 @@ layout: base
 	    <li>
 				<div class="post-meta post-listing pinned-post">
 					<div>
-						<img class="post-image" src="{{ post.image }}" />
+						{%- if post.image -%}
+							<img class="post-image" src="{{ post.image }}" />
+						{%- else -%}
+							<img class="post-image" src="{{ 'assets/images/default.png' | relative_url }}" />
+						{%- endif -%}
 					</div>
 					<div class="post-listing-text">
 						<div>
@@ -69,7 +73,11 @@ layout: base
 					<li>
 						<div class="post-listing post-meta">
 							<div>
-								<img class="post-image" src="{{ post.image }}" />
+								{%- if post.image -%}
+									<img class="post-image" src="{{ post.image }}" />
+								{%- else -%}
+									<img class="post-image" src="{{ 'assets/images/default.png' | relative_url }}" />
+								{%- endif -%}
 							</div>
 							<div class="post-listing-text">
 								<div>

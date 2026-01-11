@@ -124,6 +124,8 @@ GEM
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
       webrick (>= 1.0)
+    jekyll-archives (2.3.0)
+      jekyll (>= 3.6, < 5.0)
     jekyll-avatar (0.8.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-coffeescript (1.2.2)
@@ -289,6 +291,7 @@ DEPENDENCIES
   faraday-retry (~> 2.0)
   github-pages
   http_parser.rb (~> 0.6.0)
+  jekyll-archives
   jekyll-feed (~> 0.12)
   jekyll_begin_end
   tzinfo (>= 1, < 3)

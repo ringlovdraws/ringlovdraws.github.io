@@ -146,7 +146,7 @@ $lightestgrey: #f0f0f0;
 		letter-spacing: 1px;
 		font-size: 13px;
 
-		// Gaps between nav items, but not on the last one
+		/** Gaps between nav items, but not on the last one **/
 		&:not(:last-child) {
 			margin-right: 0;
 		}
@@ -158,6 +158,7 @@ $lightestgrey: #f0f0f0;
 
 	.current-page {
 			color: $brightpink !important;
+			font-weight: 600 !important;
 		}
 
 	@media screen and (min-width: $on-medium) {
@@ -193,7 +194,6 @@ $lightestgrey: #f0f0f0;
 		}
 	}
 }
-
 
 
 /**
@@ -836,6 +836,12 @@ input.button:hover {
 
 
 /**** Misc ****/
+
+.site-nav .page-link {      /** fixing hamburger menu size **/
+	@include media-query($on-palm) {
+		font-size: 1.5em !important;
+	}
+}
 
 .post-content.about {
 	max-width: $content-width - $spacing-unit*2;

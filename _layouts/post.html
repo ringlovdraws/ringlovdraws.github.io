@@ -25,19 +25,19 @@ layout: base
 						{%- if forloop.last == false %}, {% endif -%}
 				{% endfor %}
 			{%- endif -%}</p>
-	</header>
-	
-	<!-- tags-->
-	<span>[
-	  {% for tag in page.tags %}
-	    {% capture tag_name %}{{ tag }}{% endcapture %}
-	    <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-	  {% endfor %}
-	]</span>
 
-	<div class="post-content e-content" itemprop="articleBody">
-		{{ content }}
-	</div>
+			<div class="post-content e-content" itemprop="articleBody">
+				{{ content }}
+			</div>
+
+			<!-- tags-->
+			<p class="post-meta post-tags">Tagged as:
+			  {% for tag in page.tags %}
+			    {% capture tag_name %}{{ tag }}{% endcapture %}
+			    <a href="/tag/{{ tag_name }}" class="post-tags"><code><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+			  {% endfor %}
+			</p>
+	</header>
 
 	{%- if site.disqus.shortname -%}
 		{%- include disqus_comments.html -%}

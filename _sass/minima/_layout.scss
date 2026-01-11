@@ -477,11 +477,12 @@ ul.contact-list {
 	margin-bottom: $spacing-unit;
 }
 
-.tagcloud {
+code.tagcloud {
 	background-color: transparent;
-	color: $brightpink;
+	color: $darkpink;
+	border: none;
 
-	a:hover {
+	:hover {
 		color: $lightpink;
 	}
 }
@@ -493,6 +494,19 @@ ul.contact-list {
  */
 .post-header {
 	margin-bottom: $spacing-unit;
+}
+
+.post-tags {
+	font-size: $small-font-size;
+	color: $lightgrey !important;
+	background-color: transparent;
+	padding: 5px;
+	text-align: center;
+
+	code {
+		background-color: transparent;
+		border: none;
+	}
 }
 
 .post-content {

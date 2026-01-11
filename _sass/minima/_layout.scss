@@ -481,8 +481,8 @@ ul.contact-list {
 }
 
 .post-content {
-	width: 50vw;
-	max-width: $content-width;
+	width: 80vw;
+	max-width: $content-width - $spacing-unit *2;
 }
 
 .post-title,
@@ -559,19 +559,21 @@ ul.contact-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-left: 0;
+	margin-bottom: $spacing-unit;
+	max-width: $content-width - $spacing-unit*2;
+	width: 80vw;
 
 	li.gallery-item {
 		list-style: none;
 		padding: 5px;
-		max-height: 20vh;
-		max-width: 20vh;
+		max-height: 15vw;
+		max-width: 15vw;
 		flex-grow: 1;
 
 		@include media-query($on-palm) {
 			flex-direction: column-reverse;
-			max-width: 40vw;
-			min-height: 40vw;
+			max-width: 30vw;
+			min-height: 30vw;
 		}
 	}
 
@@ -653,12 +655,14 @@ ul.contact-list {
 		flex-direction: column-reverse;
 		margin: auto;
 		margin-bottom: $spacing-unit;
-		max-width: 90vw;
-		min-height: 90vw;
+		max-width: $content-width;
+		width: 80vw;
 	}
 }
 
 article.post {
+	max-width: $content-width - $spacing-unit*2;
+	width: 80vw;
 
 	@include media-query($on-palm) {
 		flex-direction: column-reverse;

@@ -869,11 +869,15 @@ input.button:hover {
 
 	.about-image {
 		flex: 1 1 50%;
+		display: block;
+		margin-left: auto;
 	}
 
 	.about-content {
 		flex: 1 1 50%;
 		text-align: justify;
+		margin-left: $spacing-unit *.5;
+		margin-right: $spacing-unit *2;
 	}
 
 	/* @include media-query($on-laptop) {

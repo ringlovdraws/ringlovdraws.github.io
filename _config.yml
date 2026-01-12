@@ -80,8 +80,8 @@ jekyll-archives:
     category: category-archive
     tag: tag-archive
   permalinks:
-    year: '/blog-archive/:year/'
-    month: '/blog-archive/:year/:month/'
-    day: '/blog-archive/:year/:month/:day/'
-    tag: '/blog-archive/tag/:name/'
-    category: '/blog-archive/category/:name/'
+    year: '/blog/:year/'
+    month: '/blog/:year/:month/'
+    day: '/blog/:year/:month/:day/'
+    tag: '/blog/tag/:name/'
+    category: '/blog/category/:name/'

@@ -9,5 +9,5 @@
   {% assign tagitems = temptag | split: '#' %}
   {%- capture tagsize -%}{{ tagitems[0] }} {%- endcapture -%}
   {%- capture tagname -%}{{ tagitems[1] }}{%- endcapture -%}
-  <a href="/blog-archive/tag/{{ tagname }}"><code class="tagcloud" style="font-size:{{ tagsize }}px;"><nobr>{{ tagname }}</nobr></code></a>
+  <a href="/blog/tag/{{ tagname }}"><code class="tagcloud" style="font-size:{{ tagsize }}px;"><nobr>{{ tagname }}</nobr></code></a>
 {% endfor %}

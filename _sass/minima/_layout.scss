@@ -833,6 +833,22 @@ input.button:hover {
 	background-color: $lightpink !important;
 }
 
+/**** Breadcrumbs ****/
+
+#breadcrumbs {
+  font-family: $code-font-family !important;
+  color: $lightgrey !important;
+}
+
+#breadcrumbs a {
+  font-family: $code-font-family !important;
+  color: $lightgrey !important;
+
+  &:hover {
+    color: $lightpink !important;
+  }
+}
+
 
 
 /**** Misc ****/
